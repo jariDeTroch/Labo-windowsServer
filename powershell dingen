@@ -14,3 +14,6 @@ Initialize-Disk -PartitionStyle MBR -PassThru |
 New-Partition -AssignDriveLetter -UseMaximumSize |
 
 Format-Volume -FileSystem NTFS -NewFileSystemLabel "disk2" -Confirm:$false
+
+site met partition dingen
+https://protechgurus.com/disk-management-simple-volume-using-powershell/
