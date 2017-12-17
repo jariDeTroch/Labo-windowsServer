@@ -1,6 +1,6 @@
 https://xenappblog.com/2015/configure-dhcp-with-powershell/
 ## Dhcp installeren
-
+```
 $DNSDomain="ctxlab.local"
 $DNSServerIP="192.168.1.10"
 $DHCPServerIP="192.168.1.10"
@@ -17,7 +17,7 @@ Set-ItemProperty –Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerM
 Add-DhcpServerV4Scope -Name "DHCP Scope" -StartRange $StartRange -EndRange $EndRange -SubnetMask $Subnet
 Set-DhcpServerV4OptionValue -DnsDomain $DNSDomain -DnsServer $DNSServerIP -Router $Router				
 Set-DhcpServerv4Scope -ScopeId $DHCPServerIP -LeaseDuration 1.00:00:00
-
+```
 ## Nat configureren
 https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/setup-nat-network
 ## Partities
