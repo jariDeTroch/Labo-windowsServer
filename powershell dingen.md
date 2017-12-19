@@ -43,3 +43,8 @@ Function Test([string]$arg1, [string]$arg2)
 }
 
 Test("ABC", "DEF")
+
+## ou maken in ou
+New-ADOrganizationalUnit -Name "Petri Users"
+
+New-ADOrganizationalUnit -Name Vendors -Path "OU=Employees,DC=Globomantics,DC=Local" -Description "Temporary vendor accounts" -PassThru
