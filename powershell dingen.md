@@ -31,3 +31,15 @@ New-Partition -Disk2 -Size 5GB -AssignDriveLetter
 
 Format-Volume -DriveLetter <Your Drive Letter> -FileSystem <Your File System>
 Format-Volume -DriveLetter F -FileSystem NTFS
+
+# new ADuser
+https://docs.microsoft.com/en-us/powershell/module/addsadministration/new-aduser?view=win10-ps
+
+### functie 
+Function Test([string]$arg1, [string]$arg2)
+{
+    Write-Host "`$arg1 value: $arg1"
+    Write-Host "`$arg2 value: $arg2"
+}
+
+Test("ABC", "DEF")
